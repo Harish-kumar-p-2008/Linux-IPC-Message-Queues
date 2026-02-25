@@ -21,6 +21,7 @@ Execute the C Program for the desired output.
 # PROGRAM:
 
 ## C program that receives a message from message queue and display them
+```
 writer.c
 #include <stdio.h>
 #include <sys/ipc.h>
@@ -41,9 +42,9 @@ int main()
 	printf("Data send is : %s \n", message.mesg_text);
 	return 0;
 }
-
+```
 reader.c
-
+```
 #include <stdio.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
@@ -62,7 +63,7 @@ int main()
 	msgctl(msgid, IPC_RMID, NULL);
 	return 0;
 }
-
+```
 
 
 
@@ -70,8 +71,8 @@ int main()
 
 
 ## OUTPUT
+<img width="1528" height="436" alt="image" src="https://github.com/user-attachments/assets/106cedac-a50a-4142-95ac-cc4b00f10b98" />
 
-![Uploading image.png…]()
 
 
 
